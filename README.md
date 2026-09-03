@@ -12,6 +12,58 @@ CareerOS brings tasks, meetings, projects, wins, impact, resources, and professi
 
 ---
 
+## Product walkthrough
+
+### Home
+
+The command center brings priorities, meetings, current projects, career goals, recent impact, and quick capture into one focused view.
+
+![CareerOS Home](docs/screenshots/home.jpg)
+
+### Work
+
+Projects and tasks live together so everyday execution keeps its larger context.
+
+![CareerOS Work](docs/screenshots/work.jpg)
+
+### Meetings
+
+A dedicated meeting view keeps scheduled conversations visible and creates a foundation for notes, decisions, follow-ups, and project links.
+
+![CareerOS Meetings](docs/screenshots/meetings.jpg)
+
+### Impact
+
+Wins and outcomes are separated from activity so the strongest evidence stays easy to find and reuse.
+
+![CareerOS Impact](docs/screenshots/impact.jpg)
+
+### Career
+
+Applications, conversations, career direction, goals, and interview-ready proof stay connected rather than scattered across separate trackers.
+
+![CareerOS Career](docs/screenshots/career.jpg)
+
+### Reflect
+
+Weekly reflection turns completed work, wins, and feedback into clearer judgment and reusable stories.
+
+![CareerOS Reflect](docs/screenshots/reflect.jpg)
+
+### Vault
+
+Career materials are stored once, linked back to their context, and kept ready for applications, portfolios, and interviews.
+
+![CareerOS Vault](docs/screenshots/vault.jpg)
+
+### Archive
+
+Finished work can leave the active workspace without losing its history, proof, or connections.
+
+![CareerOS Archive](docs/screenshots/archive.jpg)
+
+---
+
 ## Why I built it
 
 Career information tends to disappear into scattered tools: notes, calendars, task managers, documents, screenshots, email threads, and memory.
@@ -51,14 +103,13 @@ For example, a task can belong to a project. A meeting can generate an action it
 | Area | Purpose |
 | --- | --- |
 | **Home** | A command center for what matters now |
-| **Tasks** | Capture and complete work without losing context |
-| **Meetings** | Keep meetings accessible beyond the calendar event |
-| **Projects** | Organize work around larger initiatives |
-| **Impact** | Track wins, outcomes, and measurable proof horizontally rather than as a long activity log |
-| **Brand HQ** | Maintain professional positioning and reusable career language |
+| **Work** | Projects and tasks organized around active priorities |
+| **Meetings** | Keep conversations accessible beyond the calendar event |
+| **Impact** | Track wins, outcomes, feedback, and measurable proof |
+| **Career** | Applications, goals, direction, and interview-ready evidence |
+| **Reflect** | Turn weekly activity into judgment, patterns, and next moves |
 | **Vault** | Keep useful resources and career assets together |
 | **Archive** | Remove items from active views without losing them |
-| **Settings** | Control local data and app behavior |
 
 ### Current interaction details
 
@@ -174,22 +225,6 @@ flowchart TD
 ```
 
 The current local persistence layer lets the product be tested without shipping credentials or seeded demo content. The next implementation slice replaces that layer with authenticated, user-owned records in Supabase while preserving the product model.
-
----
-
-## Current routes
-
-```text
-/
-/tasks
-/meetings
-/projects
-/impact
-/brand
-/vault
-/archive
-/settings
-```
 
 ---
 
